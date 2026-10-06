@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
   <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Are They Dead?</title>
 
@@ -17,84 +19,137 @@
     }
 
     body {
+
       margin: 0;
+
       min-height: 100vh;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       background: #111;
+
       color: #eee;
+
       font-family: Arial, sans-serif;
+
     }
 
     .container {
+
       text-align: center;
+
       padding: 20px;
+
     }
 
     .question {
+
       font-size: 2rem;
+
       font-weight: bold;
+
       margin-bottom: 15px;
+
     }
 
     .person-selector {
+
       display: flex;
+
       align-items: center;
+
       justify-content: center;
+
       gap: 25px;
+
     }
 
     .person-selector button {
+
       background: none;
+
       border: none;
+
       color: #aaa;
+
       font-size: 2.5rem;
+
       cursor: pointer;
+
       padding: 10px;
+
       transition: color 0.2s;
+
     }
 
     .person-selector button:hover {
+
       color: #fff;
+
     }
 
     h1 {
+
       font-size: 2.5rem;
+
       margin-bottom: 5px;
+
     }
 
     .status {
+
       font-size: 5rem;
+
       font-weight: bold;
+
       margin: 20px 0;
+
     }
 
     .age {
+
       font-size: 1.25rem;
+
       color: #bbb;
+
       margin-top: 15px;
+
       line-height: 1.6;
+
     }
 
     .countdown {
+
       font-size: 1.2rem;
+
       color: #ccc;
+
       margin-top: 20px;
+
     }
 
     .countdown-label {
+
       font-size: 1.2rem;
+
       color: #bbb;
+
       margin-top: 20px;
+
       margin-bottom: 5px;
+
     }
 
     .countdown-bar {
+
       width: 100%;
+
       max-width: 600px;
+
       height: 20px;
 
       background: #333;
@@ -104,9 +159,11 @@
       margin: 10px auto 0;
 
       overflow: hidden;
+
     }
 
     .countdown-fill {
+
       height: 100%;
 
       width: 100%;
@@ -118,6 +175,7 @@
       transition:
         width 1s linear,
         background 0.3s;
+
     }
 
 
@@ -126,6 +184,7 @@
        ========================================== */
 
     .goon-counter {
+
       width: 180px;
 
       padding: 15px;
@@ -139,28 +198,35 @@
       text-align: center;
 
       margin: 25px auto 0;
+
     }
 
     .goon-title {
+
       color: #aaa;
 
       font-size: 1rem;
 
       margin-bottom: 5px;
+
     }
 
     .goon-number {
+
       color: #45d483;
 
       font-size: 2.5rem;
 
       font-weight: bold;
+
     }
 
     .goon-limit {
+
       color: #666;
 
       font-size: 0.8rem;
+
     }
 
 
@@ -169,11 +235,13 @@
        ========================================== */
 
     .eats-counters {
+
       display: none;
 
       position: absolute;
 
       right: 30px;
+
       top: 30px;
 
       gap: 15px;
@@ -181,9 +249,11 @@
       justify-content: center;
 
       flex-wrap: wrap;
+
     }
 
     .eats-counter {
+
       width: 170px;
 
       padding: 15px;
@@ -195,34 +265,45 @@
       border-radius: 10px;
 
       text-align: center;
+
     }
 
     .eats-title {
+
       color: #aaa;
 
       font-size: 0.95rem;
 
       margin-bottom: 5px;
+
     }
 
     .eats-number {
+
       font-size: 2.2rem;
 
       font-weight: bold;
+
     }
 
     .good-eats .eats-number {
+
       color: #45d483;
+
     }
 
     .bad-eats .eats-number {
+
       color: #ff5c5c;
+
     }
 
     .eats-limit {
+
       color: #666;
 
       font-size: 0.8rem;
+
     }
 
 
@@ -231,19 +312,23 @@
        ========================================== */
 
     .subtitle {
+
       color: #777;
 
       font-size: 0.9rem;
 
       margin-top: 20px;
+
     }
 
     .updated {
+
       margin-top: 25px;
 
       color: #555;
 
       font-size: 0.75rem;
+
     }
 
 
@@ -254,6 +339,7 @@
     @media (max-width: 700px) {
 
       .eats-counters {
+
         position: static;
 
         margin: 25px auto 0;
@@ -261,7 +347,9 @@
       }
 
       .goon-counter {
+
         margin: 25px auto 0;
+
       }
 
     }
@@ -282,10 +370,9 @@
 
     <div
       class="question"
-      id="question">
-
+      id="question"
+    >
       Is he dead?
-
     </div>
 
 
@@ -316,8 +403,8 @@
 
     <div
       class="status"
-      id="status">
-    </div>
+      id="status"
+    ></div>
 
 
     <!-- ==========================================
@@ -326,8 +413,8 @@
 
     <div
       class="age"
-      id="age">
-    </div>
+      id="age"
+    ></div>
 
 
     <!-- ==========================================
@@ -340,8 +427,8 @@
 
     <div
       class="countdown"
-      id="countdown">
-    </div>
+      id="countdown"
+    ></div>
 
 
     <!-- ==========================================
@@ -352,20 +439,20 @@
 
       <div
         class="countdown-fill"
-        id="countdownFill">
-      </div>
+        id="countdownFill"
+      ></div>
 
     </div>
 
 
     <!-- ==========================================
          GOON COUNTER
-         NOW UNDER COUNTDOWN
          ========================================== -->
 
     <div
       class="goon-counter"
-      id="goonCounter">
+      id="goonCounter"
+    >
 
       <div class="goon-title">
         Goon Counter
@@ -373,10 +460,9 @@
 
       <div
         class="goon-number"
-        id="goonNumber">
-
+        id="goonNumber"
+      >
         0
-
       </div>
 
       <div class="goon-limit">
@@ -388,18 +474,18 @@
 
     <!-- ==========================================
          FINN EATS COUNTERS
-         NOW IN UPPER RIGHT
          ========================================== -->
 
     <div
       class="eats-counters"
-      id="eatsCounters">
-
+      id="eatsCounters"
+    >
 
       <!-- GOOD EATS -->
 
       <div
-        class="eats-counter good-eats">
+        class="eats-counter good-eats"
+      >
 
         <div class="eats-title">
           Good Eats Counter
@@ -407,10 +493,9 @@
 
         <div
           class="eats-number"
-          id="goodEatsNumber">
-
+          id="goodEatsNumber"
+        >
           0
-
         </div>
 
         <div class="eats-limit">
@@ -423,7 +508,8 @@
       <!-- BAD EATS -->
 
       <div
-        class="eats-counter bad-eats">
+        class="eats-counter bad-eats"
+      >
 
         <div class="eats-title">
           Bad Eats Counter
@@ -431,10 +517,9 @@
 
         <div
           class="eats-number"
-          id="badEatsNumber">
-
+          id="badEatsNumber"
+        >
           0
-
         </div>
 
         <div class="eats-limit">
@@ -442,7 +527,6 @@
         </div>
 
       </div>
-
 
     </div>
 
@@ -455,7 +539,6 @@
       Extremely reliable information
     </div>
 
-
     <div class="updated">
       Last checked: Definitely
     </div>
@@ -465,51 +548,41 @@
 
   <script>
 
-
     // ==========================================
     // CREATE FINN DEATH DATE
     // ==========================================
 
     function createFinnDeathDate() {
 
-      const deathDate =
-        new Date();
-
+      const deathDate = new Date();
 
       deathDate.setFullYear(
         deathDate.getFullYear() + 210
       );
 
-
       deathDate.setMonth(
         deathDate.getMonth() + 56
       );
-
 
       deathDate.setDate(
         deathDate.getDate() + (43 * 7)
       );
 
-
       deathDate.setDate(
         deathDate.getDate() + 20
       );
-
 
       deathDate.setHours(
         deathDate.getHours() + 45
       );
 
-
       deathDate.setMinutes(
         deathDate.getMinutes() + 3
       );
 
-
       deathDate.setSeconds(
         deathDate.getSeconds() + 10
       );
-
 
       return deathDate;
 
@@ -522,44 +595,35 @@
 
     function createZanaDeathDate() {
 
-      const deathDate =
-        new Date();
-
+      const deathDate = new Date();
 
       deathDate.setFullYear(
         deathDate.getFullYear() + 98
       );
 
-
       deathDate.setMonth(
         deathDate.getMonth() + 42
       );
-
 
       deathDate.setDate(
         deathDate.getDate() + (12 * 7)
       );
 
-
       deathDate.setDate(
         deathDate.getDate() + 23
       );
-
 
       deathDate.setHours(
         deathDate.getHours() + 4
       );
 
-
       deathDate.setMinutes(
         deathDate.getMinutes() + 6
       );
 
-
       deathDate.setSeconds(
         deathDate.getSeconds() + 50
       );
-
 
       return deathDate;
 
@@ -572,10 +636,7 @@
 
     const people = [
 
-
-      // ========================================
       // JAMIE
-      // ========================================
 
       {
 
@@ -611,9 +672,7 @@
       },
 
 
-      // ========================================
       // ZANA
-      // ========================================
 
       {
 
@@ -643,9 +702,7 @@
       },
 
 
-      // ========================================
       // FINN
-      // ========================================
 
       {
 
@@ -694,12 +751,23 @@
 
 
     // ==========================================
-    // EATS COUNTERS
+    // FINN EATS COUNTERS
     // ==========================================
 
     let goodEats = 0;
 
     let badEats = 0;
+
+
+    // ==========================================
+    // STORAGE KEYS
+    // ==========================================
+
+    const GOON_STORAGE_KEY =
+      "areTheyDead_goonCounters";
+
+    const EATS_STORAGE_KEY =
+      "areTheyDead_eatsCounters";
 
 
     // ==========================================
@@ -741,6 +809,184 @@
 
 
     // ==========================================
+    // LOAD GOON COUNTERS
+    // ==========================================
+
+    function loadGoonCounters() {
+
+      const saved =
+        localStorage.getItem(
+          GOON_STORAGE_KEY
+        );
+
+      if (!saved) {
+        return;
+      }
+
+      try {
+
+        const data =
+          JSON.parse(saved);
+
+        for (
+          const person of people
+        ) {
+
+          if (!person.hasGoonCounter) {
+            continue;
+          }
+
+          if (
+            data[person.name] &&
+            typeof data[person.name].count ===
+            "number"
+          ) {
+
+            person.goonCount =
+              Math.min(
+                data[person.name].count,
+                GOON_LIMIT
+              );
+
+            person.lastGoonDay =
+              data[person.name].lastDay ||
+              new Date().toDateString();
+
+          }
+
+        }
+
+      } catch (error) {
+
+        console.error(
+          "Could not load Goon counters:",
+          error
+        );
+
+      }
+
+    }
+
+
+    // ==========================================
+    // SAVE GOON COUNTERS
+    // ==========================================
+
+    function saveGoonCounters() {
+
+      const data = {};
+
+      for (
+        const person of people
+      ) {
+
+        if (!person.hasGoonCounter) {
+          continue;
+        }
+
+        data[person.name] = {
+
+          count:
+            person.goonCount,
+
+          lastDay:
+            person.lastGoonDay
+
+        };
+
+      }
+
+      localStorage.setItem(
+
+        GOON_STORAGE_KEY,
+
+        JSON.stringify(data)
+
+      );
+
+    }
+
+
+    // ==========================================
+    // LOAD EATS COUNTERS
+    // ==========================================
+
+    function loadEatsCounters() {
+
+      const saved =
+        localStorage.getItem(
+          EATS_STORAGE_KEY
+        );
+
+      if (!saved) {
+        return;
+      }
+
+      try {
+
+        const data =
+          JSON.parse(saved);
+
+        if (
+          typeof data.good === "number"
+        ) {
+
+          goodEats =
+            Math.min(
+              data.good,
+              EATS_LIMIT
+            );
+
+        }
+
+        if (
+          typeof data.bad === "number"
+        ) {
+
+          badEats =
+            Math.min(
+              data.bad,
+              EATS_LIMIT
+            );
+
+        }
+
+      } catch (error) {
+
+        console.error(
+          "Could not load Eats counters:",
+          error
+        );
+
+      }
+
+    }
+
+
+    // ==========================================
+    // SAVE EATS COUNTERS
+    // ==========================================
+
+    function saveEatsCounters() {
+
+      localStorage.setItem(
+
+        EATS_STORAGE_KEY,
+
+        JSON.stringify({
+
+          good: goodEats,
+
+          bad: badEats
+
+        })
+
+      );
+
+    }
+
+
+    // ==========================================
     // CALCULATE AGE
     // ==========================================
 
@@ -749,11 +995,9 @@
       const now =
         new Date();
 
-
       let years =
         now.getFullYear() -
         birthDate.getFullYear();
-
 
       const birthdayThisYear =
         new Date(
@@ -772,7 +1016,6 @@
 
         );
 
-
       if (
         now <
         birthdayThisYear
@@ -781,7 +1024,6 @@
         years--;
 
       }
-
 
       const afterYears =
         new Date(
@@ -800,12 +1042,10 @@
 
         );
 
-
       let months = 0;
 
       let monthDate =
         new Date(afterYears);
-
 
       while (true) {
 
@@ -826,7 +1066,6 @@
 
           );
 
-
         if (
           nextMonth <= now
         ) {
@@ -836,9 +1075,7 @@
 
           months++;
 
-        }
-
-        else {
+        } else {
 
           break;
 
@@ -846,10 +1083,8 @@
 
       }
 
-
       let remainingTime =
         now - monthDate;
-
 
       const millisecondsPerHour =
         1000 * 60 * 60;
@@ -860,43 +1095,31 @@
       const millisecondsPerWeek =
         millisecondsPerDay * 7;
 
-
       const weeks =
         Math.floor(
-
           remainingTime /
           millisecondsPerWeek
-
         );
-
 
       remainingTime -=
         weeks *
         millisecondsPerWeek;
 
-
       const days =
         Math.floor(
-
           remainingTime /
           millisecondsPerDay
-
         );
-
 
       remainingTime -=
         days *
         millisecondsPerDay;
 
-
       const hours =
         Math.floor(
-
           remainingTime /
           millisecondsPerHour
-
         );
-
 
       age.textContent =
 
@@ -924,7 +1147,6 @@
       const person =
         people[currentPerson];
 
-
       if (!person.deathDate) {
 
         countdown.textContent =
@@ -937,18 +1159,14 @@
 
       }
 
-
       const now =
         new Date();
-
 
       let remainingTime =
         person.deathDate - now;
 
 
-      // ========================================
       // DEATH DATE REACHED
-      // ========================================
 
       if (
         remainingTime <= 0
@@ -974,14 +1192,11 @@
       }
 
 
-      // ========================================
       // YEARS
-      // ========================================
 
       let years =
         person.deathDate.getFullYear() -
         now.getFullYear();
-
 
       const deathDateThisYear =
         new Date(
@@ -1000,7 +1215,6 @@
 
         );
 
-
       if (
         now >=
         deathDateThisYear
@@ -1011,9 +1225,7 @@
       }
 
 
-      // ========================================
       // MONTHS
-      // ========================================
 
       const afterYears =
         new Date(
@@ -1032,12 +1244,10 @@
 
         );
 
-
       let months = 0;
 
       let monthDate =
         new Date(afterYears);
-
 
       while (true) {
 
@@ -1058,7 +1268,6 @@
 
           );
 
-
         if (
           nextMonth <=
           person.deathDate
@@ -1069,9 +1278,7 @@
 
           months++;
 
-        }
-
-        else {
+        } else {
 
           break;
 
@@ -1080,14 +1287,11 @@
       }
 
 
-      // ========================================
-      // WEEKS / DAYS / HOURS / MINUTES / SECONDS
-      // ========================================
+      // REMAINING TIME
 
       remainingTime =
         person.deathDate -
         monthDate;
-
 
       const millisecondsPerSecond =
         1000;
@@ -1104,75 +1308,54 @@
       const millisecondsPerWeek =
         millisecondsPerDay * 7;
 
-
       const weeks =
         Math.floor(
-
           remainingTime /
           millisecondsPerWeek
-
         );
-
 
       remainingTime -=
         weeks *
         millisecondsPerWeek;
 
-
       const days =
         Math.floor(
-
           remainingTime /
           millisecondsPerDay
-
         );
-
 
       remainingTime -=
         days *
         millisecondsPerDay;
 
-
       const hours =
         Math.floor(
-
           remainingTime /
           millisecondsPerHour
-
         );
-
 
       remainingTime -=
         hours *
         millisecondsPerHour;
 
-
       const minutes =
         Math.floor(
-
           remainingTime /
           millisecondsPerMinute
-
         );
-
 
       remainingTime -=
         minutes *
         millisecondsPerMinute;
 
-
       const seconds =
         Math.floor(
-
           remainingTime /
           millisecondsPerSecond
-
         );
 
 
-      // ========================================
-      // DISPLAY COUNTDOWN
-      // ========================================
+      // DISPLAY
 
       countdown.textContent =
 
@@ -1191,21 +1374,17 @@
         `${seconds} seconds`;
 
 
-      // ========================================
       // COUNTDOWN BAR
-      // ========================================
 
       const totalTime =
         person.deathDate -
         person.birthDate;
-
 
       const percentage =
 
         (person.deathDate - now) /
         totalTime *
         100;
-
 
       countdownFill.style.width =
 
@@ -1224,9 +1403,7 @@
         ) + "%";
 
 
-      // ========================================
       // BAR COLOR
-      // ========================================
 
       if (
         percentage <= 10
@@ -1319,7 +1496,7 @@
       );
 
 
-      // DEATH COUNTDOWN
+      // COUNTDOWN
 
       updateCountdown();
 
@@ -1345,7 +1522,7 @@
       }
 
 
-      // FINN EATS COUNTERS
+      // FINN EATS
 
       if (
         person.name === "Finn"
@@ -1376,7 +1553,6 @@
 
       currentPerson++;
 
-
       if (
         currentPerson >=
         people.length
@@ -1385,7 +1561,6 @@
         currentPerson = 0;
 
       }
-
 
       displayPerson();
 
@@ -1400,7 +1575,6 @@
 
       currentPerson--;
 
-
       if (
         currentPerson < 0
       ) {
@@ -1409,7 +1583,6 @@
           people.length - 1;
 
       }
-
 
       displayPerson();
 
@@ -1425,6 +1598,13 @@
       const person =
         people[currentPerson];
 
+      if (
+        !person.hasGoonCounter
+      ) {
+
+        return;
+
+      }
 
       goonNumber.textContent =
         person.goonCount;
@@ -1433,7 +1613,7 @@
 
 
     // ==========================================
-    // CHECK FOR NEW DAY
+    // CHECK GOON DAY
     // ==========================================
 
     function checkGoonDay() {
@@ -1441,9 +1621,10 @@
       const today =
         new Date().toDateString();
 
+      let changed = false;
 
       for (
-        let person of people
+        const person of people
       ) {
 
         if (
@@ -1453,7 +1634,6 @@
           continue;
 
         }
-
 
         if (
           person.lastGoonDay !==
@@ -1466,10 +1646,17 @@
           person.lastGoonDay =
             today;
 
+          changed = true;
+
         }
 
       }
 
+      if (changed) {
+
+        saveGoonCounters();
+
+      }
 
       updateGoonCounter();
 
@@ -1484,9 +1671,8 @@
 
       checkGoonDay();
 
-
       for (
-        let person of people
+        const person of people
       ) {
 
         if (
@@ -1496,7 +1682,6 @@
           continue;
 
         }
-
 
         if (
           person.goonCount >=
@@ -1537,6 +1722,7 @@
 
       }
 
+      saveGoonCounters();
 
       updateGoonCounter();
 
@@ -1596,6 +1782,7 @@
 
       }
 
+      saveEatsCounters();
 
       updateEatsCounters();
 
@@ -1603,14 +1790,23 @@
 
 
     // ==========================================
-    // START
+    // LOAD SAVED COUNTERS
+    // ==========================================
+
+    loadGoonCounters();
+
+    loadEatsCounters();
+
+
+    // ==========================================
+    // INITIAL DISPLAY
     // ==========================================
 
     displayPerson();
 
 
     // ==========================================
-    // UPDATE EVERYTHING EVERY SECOND
+    // UPDATE PAGE EVERY SECOND
     // ==========================================
 
     setInterval(
@@ -1627,7 +1823,12 @@
 
 
     // ==========================================
-    // INCREASE GOON COUNTERS EVERY 30 MINUTES
+    // TEST MODE
+    //
+    // GOON COUNTERS: EVERY 10 SECONDS
+    // EATS COUNTERS: EVERY 10 SECONDS
+    //
+    // CHANGE THESE BACK WHEN TESTING IS DONE.
     // ==========================================
 
     setInterval(
@@ -1638,14 +1839,10 @@
 
       },
 
-      30 * 60 * 1000
+      10 * 1000
 
     );
 
-
-    // ==========================================
-    // INCREASE EATS COUNTER EVERY HOUR
-    // ==========================================
 
     setInterval(
 
@@ -1655,13 +1852,13 @@
 
       },
 
-      60 * 60 * 1000
+      10 * 1000
 
     );
 
 
     // ==========================================
-    // CHECK FOR NEW DAY EVERY MINUTE
+    // CHECK FOR NEW DAY
     // ==========================================
 
     setInterval(
@@ -1675,7 +1872,6 @@
       60 * 1000
 
     );
-
 
   </script>
 
