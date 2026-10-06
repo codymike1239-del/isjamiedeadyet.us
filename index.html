@@ -19,59 +19,39 @@
     }
 
     body {
-
       margin: 0;
-
       min-height: 100vh;
 
       display: flex;
-
       align-items: center;
-
       justify-content: center;
 
       background: #111;
-
       color: #eee;
 
       font-family: Arial, sans-serif;
-
     }
 
     .container {
-
       text-align: center;
-
       padding: 20px;
-
     }
 
     .question {
-
       font-size: 2rem;
-
       font-weight: bold;
-
       margin-bottom: 15px;
-
     }
 
     .person-selector {
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
       gap: 25px;
-
     }
 
     .person-selector button {
-
       background: none;
-
       border: none;
 
       color: #aaa;
@@ -83,71 +63,49 @@
       padding: 10px;
 
       transition: color 0.2s;
-
     }
 
     .person-selector button:hover {
-
       color: #fff;
-
     }
 
     h1 {
-
       font-size: 2.5rem;
-
       margin-bottom: 5px;
-
     }
 
     .status {
-
       font-size: 5rem;
-
       font-weight: bold;
-
       margin: 20px 0;
-
     }
 
     .age {
-
       font-size: 1.25rem;
-
       color: #bbb;
 
       margin-top: 15px;
 
       line-height: 1.6;
-
     }
 
     .countdown {
-
       font-size: 1.2rem;
-
       color: #ccc;
 
       margin-top: 20px;
-
     }
 
     .countdown-label {
-
       font-size: 1.2rem;
-
       color: #bbb;
 
       margin-top: 20px;
-
       margin-bottom: 5px;
-
     }
 
     .countdown-bar {
-
       width: 100%;
-
       max-width: 600px;
 
       height: 20px;
@@ -159,11 +117,9 @@
       margin: 10px auto 0;
 
       overflow: hidden;
-
     }
 
     .countdown-fill {
-
       height: 100%;
 
       width: 100%;
@@ -175,7 +131,6 @@
       transition:
         width 1s linear,
         background 0.3s;
-
     }
 
 
@@ -184,7 +139,6 @@
        ========================================== */
 
     .goon-counter {
-
       width: 180px;
 
       padding: 15px;
@@ -198,35 +152,28 @@
       text-align: center;
 
       margin: 25px auto 0;
-
     }
 
     .goon-title {
-
       color: #aaa;
 
       font-size: 1rem;
 
       margin-bottom: 5px;
-
     }
 
     .goon-number {
-
       color: #45d483;
 
       font-size: 2.5rem;
 
       font-weight: bold;
-
     }
 
     .goon-limit {
-
       color: #666;
 
       font-size: 0.8rem;
-
     }
 
 
@@ -235,13 +182,11 @@
        ========================================== */
 
     .eats-counters {
-
       display: none;
 
       position: absolute;
 
       right: 30px;
-
       top: 30px;
 
       gap: 15px;
@@ -249,11 +194,9 @@
       justify-content: center;
 
       flex-wrap: wrap;
-
     }
 
     .eats-counter {
-
       width: 170px;
 
       padding: 15px;
@@ -265,45 +208,34 @@
       border-radius: 10px;
 
       text-align: center;
-
     }
 
     .eats-title {
-
       color: #aaa;
 
       font-size: 0.95rem;
 
       margin-bottom: 5px;
-
     }
 
     .eats-number {
-
       font-size: 2.2rem;
 
       font-weight: bold;
-
     }
 
     .good-eats .eats-number {
-
       color: #45d483;
-
     }
 
     .bad-eats .eats-number {
-
       color: #ff5c5c;
-
     }
 
     .eats-limit {
-
       color: #666;
 
       font-size: 0.8rem;
-
     }
 
 
@@ -312,23 +244,19 @@
        ========================================== */
 
     .subtitle {
-
       color: #777;
 
       font-size: 0.9rem;
 
       margin-top: 20px;
-
     }
 
     .updated {
-
       margin-top: 25px;
 
       color: #555;
 
       font-size: 0.75rem;
-
     }
 
 
@@ -339,17 +267,13 @@
     @media (max-width: 700px) {
 
       .eats-counters {
-
         position: static;
 
         margin: 25px auto 0;
-
       }
 
       .goon-counter {
-
         margin: 25px auto 0;
-
       }
 
     }
@@ -481,6 +405,7 @@
       id="eatsCounters"
     >
 
+
       <!-- GOOD EATS -->
 
       <div
@@ -548,13 +473,15 @@
 
   <script>
 
+
     // ==========================================
     // CREATE FINN DEATH DATE
     // ==========================================
 
     function createFinnDeathDate() {
 
-      const deathDate = new Date();
+      const deathDate =
+        new Date();
 
       deathDate.setFullYear(
         deathDate.getFullYear() + 210
@@ -595,7 +522,8 @@
 
     function createZanaDeathDate() {
 
-      const deathDate = new Date();
+      const deathDate =
+        new Date();
 
       deathDate.setFullYear(
         deathDate.getFullYear() + 98
@@ -636,7 +564,9 @@
 
     const people = [
 
+      // ========================================
       // JAMIE
+      // ========================================
 
       {
 
@@ -672,7 +602,9 @@
       },
 
 
+      // ========================================
       // ZANA
+      // ========================================
 
       {
 
@@ -702,7 +634,9 @@
       },
 
 
+      // ========================================
       // FINN
+      // ========================================
 
       {
 
@@ -1522,7 +1456,7 @@
       }
 
 
-      // FINN EATS
+      // FINN EATS COUNTERS
 
       if (
         person.name === "Finn"
@@ -1613,7 +1547,7 @@
 
 
     // ==========================================
-    // CHECK GOON DAY
+    // CHECK FOR NEW DAY
     // ==========================================
 
     function checkGoonDay() {
@@ -1806,7 +1740,7 @@
 
 
     // ==========================================
-    // UPDATE PAGE EVERY SECOND
+    // UPDATE EVERYTHING EVERY SECOND
     // ==========================================
 
     setInterval(
@@ -1823,12 +1757,7 @@
 
 
     // ==========================================
-    // TEST MODE
-    //
-    // GOON COUNTERS: EVERY 10 SECONDS
-    // EATS COUNTERS: EVERY 10 SECONDS
-    //
-    // CHANGE THESE BACK WHEN TESTING IS DONE.
+    // INCREASE GOON COUNTERS EVERY 30 MINUTES
     // ==========================================
 
     setInterval(
@@ -1839,10 +1768,14 @@
 
       },
 
-      10 * 1000
+      30 * 60 * 1000
 
     );
 
+
+    // ==========================================
+    // INCREASE EATS COUNTER EVERY HOUR
+    // ==========================================
 
     setInterval(
 
@@ -1852,13 +1785,13 @@
 
       },
 
-      10 * 1000
+      60 * 60 * 1000
 
     );
 
 
     // ==========================================
-    // CHECK FOR NEW DAY
+    // CHECK FOR NEW DAY EVERY MINUTE
     // ==========================================
 
     setInterval(
